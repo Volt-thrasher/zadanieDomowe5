@@ -1,8 +1,6 @@
 package zadanie3;
 
 public class BruttoCalc {
-    BruttoCalc() {
-    }
 
     public double brutto(Product product) {
         double VAT = 0.0;
@@ -14,7 +12,7 @@ public class BruttoCalc {
                 VAT = 0.05;
                 break;
             default:
-                throw new IllegalStateException("Unexpected value: " + product.getCategory());
+                System.out.println("Nieznana kategoria produktu");;
         }
         double priceBrutto = product.getPriceNetto() * (1 + VAT);
         return priceBrutto;

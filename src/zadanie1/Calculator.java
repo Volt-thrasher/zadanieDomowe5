@@ -7,9 +7,7 @@ public class Calculator {
 
     public double calc() {
         double result;
-        System.out.println("Wprowadz pierwsza liczbe");
         double a = keyboard.nextDouble();
-        System.out.println("Wprowadz druga liczbe");
         double b = keyboard.nextDouble();
         if (a < b) {
             result =a * b;

@@ -28,23 +28,21 @@ public class Point {
     Scanner keyboard = new Scanner(System.in);
     public void quarter(){
         String num = null;
-        System.out.println("Podaj X");
-        setX(x = keyboard.nextInt());
-        System.out.println("Podaj Y");
-        setY(y=keyboard.nextInt());
-        if (getX()>0&&getY()>0){
+        x = keyboard.nextInt();
+        y=keyboard.nextInt();
+        if (x>0&&y>0){
             num = "I";
-        } else if (getX()>0&&getY()<0){
+        } else if (x>0&&y<0){
             num="II";
-        }else if (getX()<0&&getY()<0){
+        }else if (x<0&&y<0){
             num = "III";
-        }else if (getX()<0&&getY()>0){
+        }else if (x<0&&y>0){
             num="IV";
         }else {
             System.out.println("Punkt (0,0) znajduje sie w poczatku ukladu wspolrzednych");
         }
         if (num!=null){
-            System.out.println("Punkt("+getX()+"; "+getY()+") lezy w "+num+" cwiartce ukladu wspolrzednych");
+            System.out.println("Punkt("+x+"; "+y+") lezy w "+num+" cwiartce ukladu wspolrzednych");
         }
     }
 }
