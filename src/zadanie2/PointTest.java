@@ -1,6 +1,6 @@
 package zadanie2;
 
-public class Test {
+public class PointTest {
     public static void main(String[] args) {
         Point point = new Point();
         point.quarter();

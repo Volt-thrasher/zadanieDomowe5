@@ -5,18 +5,21 @@ import java.util.Scanner;
 public class Calculator {
     Scanner keyboard = new Scanner(System.in);
 
-    public void calc() {
+    public double calc() {
+        double result;
         System.out.println("Wprowadz pierwsza liczbe");
         double a = keyboard.nextDouble();
         System.out.println("Wprowadz druga liczbe");
         double b = keyboard.nextDouble();
         if (a < b) {
-            System.out.println(a * b);
+            result =a * b;
         } else if (a > b) {
-            System.out.println(a + b);
+            result = a + b;
         } else {
-            System.out.println(a * a);
+            result = a * a;
         }
+        System.out.println(result);
+        return result;
     }
 
 }
