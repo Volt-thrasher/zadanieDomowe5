@@ -25,11 +25,8 @@ public class Point {
     public void setY(int y) {
         this.y = y;
     }
-    Scanner keyboard = new Scanner(System.in);
-    public void quarter(){
+    public void quarter(double x, double y){
         String num = null;
-        x = keyboard.nextInt();
-        y=keyboard.nextInt();
         if (x>0&&y>0){
             num = "I";
         } else if (x>0&&y<0){
