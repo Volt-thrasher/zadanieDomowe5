@@ -3,12 +3,9 @@ package zadanie1;
 import java.util.Scanner;
 
 public class Calculator {
-    Scanner keyboard = new Scanner(System.in);
+    double result;
 
-    public double calc() {
-        double result;
-        double a = keyboard.nextDouble();
-        double b = keyboard.nextDouble();
+    public double calc(double a, double b) {
         if (a < b) {
             result =a * b;
         } else if (a > b) {
@@ -16,7 +13,6 @@ public class Calculator {
         } else {
             result = a * a;
         }
-        System.out.println(result);
         return result;
     }
 
