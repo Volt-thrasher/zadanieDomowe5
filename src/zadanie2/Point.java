@@ -4,21 +4,19 @@ import java.util.Scanner;
 
 public class Point {
 
-    public void quarter(double x, double y) {
+    public String quarter(double x, double y) {
         String num = null;
         if (x > 0 && y > 0) {
-            num = "I";
+            num = "Punkt(" + x + "; " + y + ") lezy w I cwiartce ukladu wspolrzednych";
         } else if (x > 0 && y < 0) {
-            num = "II";
+            num = "Punkt(" + x + "; " + y + ") lezy w II cwiartce ukladu wspolrzednych";
         } else if (x < 0 && y < 0) {
-            num = "III";
+            num = "Punkt(" + x + "; " + y + ") lezy w III cwiartce ukladu wspolrzednych";
         } else if (x < 0 && y > 0) {
-            num = "IV";
+            num = "Punkt(" + x + "; " + y + ") lezy w IV cwiartce ukladu wspolrzednych";
         } else {
-            System.out.println("Punkt (0,0) znajduje sie w poczatku ukladu wspolrzednych");
+            num = "Punkt (0,0) znajduje sie w poczatku ukladu wspolrzednych";
         }
-        if (num != null) {
-            System.out.println("Punkt(" + x + "; " + y + ") lezy w " + num + " cwiartce ukladu wspolrzednych");
-        }
+        return num;
     }
 }

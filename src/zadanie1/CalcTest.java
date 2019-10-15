@@ -8,7 +8,9 @@ public class CalcTest {
         Calculator calculator = new Calculator();
         System.out.println("Wprowadz dwie dowolne liczby");
         double a = keyboard.nextDouble();
+        keyboard.nextLine();
         double b = keyboard.nextDouble();
+        keyboard.close();
         calculator.calc(a, b);
         System.out.println(calculator.calc(a, b));
     }

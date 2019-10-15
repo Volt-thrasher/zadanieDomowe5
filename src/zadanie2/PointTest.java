@@ -8,7 +8,9 @@ public class PointTest {
         Point point = new Point();
         System.out.println("Podaj wspolrzedne punktu x i y");
         int x = keyboard.nextInt();
+        keyboard.nextLine();
         int y = keyboard.nextInt();
-        point.quarter(x, y);
+        keyboard.close();
+        System.out.println(point.quarter(x, y));
     }
 }
