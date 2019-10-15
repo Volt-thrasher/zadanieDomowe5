@@ -5,13 +5,15 @@ public class Product {
     private String category;
     private String description;
     private double priceNetto;
-    Product(){
+
+    Product() {
     }
-    Product(String name, String category, String description, double netto){
-        this.name= name;
-        this.category=category;
-        this.description=description;
-        this.priceNetto=netto;
+
+    Product(String name, String category, String description, double netto) {
+        this.name = name;
+        this.category = category;
+        this.description = description;
+        this.priceNetto = netto;
     }
 
     public String getName() {

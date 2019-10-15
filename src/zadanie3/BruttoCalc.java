@@ -12,7 +12,6 @@ public class BruttoCalc {
                 VAT = 0.05;
                 break;
             default:
-                System.out.println("Nieznana kategoria produktu");
         }
         double priceBrutto = product.getPriceNetto() * (1 + VAT);
         return priceBrutto;

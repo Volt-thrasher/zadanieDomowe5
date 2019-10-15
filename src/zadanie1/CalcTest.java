@@ -10,6 +10,6 @@ public class CalcTest {
         double a = keyboard.nextDouble();
         double b = keyboard.nextDouble();
         calculator.calc(a, b);
-        System.out.println(calculator.result);
+        System.out.println(calculator.calc(a, b));
     }
 }

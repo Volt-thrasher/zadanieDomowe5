@@ -3,11 +3,11 @@ package zadanie1;
 import java.util.Scanner;
 
 public class Calculator {
-    double result;
 
     public double calc(double a, double b) {
+        double result;
         if (a < b) {
-            result =a * b;
+            result = a * b;
         } else if (a > b) {
             result = a + b;
         } else {

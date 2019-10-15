@@ -9,5 +9,6 @@ public class Test {
         BruttoCalc calc1 = new BruttoCalc();
         System.out.println(calc1.brutto(product1));
         System.out.println(calc1.brutto(product2));
+
     }
 }
